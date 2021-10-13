@@ -62,7 +62,7 @@ X_test = X_test[['time_index_' + str(i) for i in range(286)]]
 pipe.fit(X_train, target_train)
 
 #pipe score
-print(pipe.score(X_test, target_train))
+print('acc {:.2%}'.format(pipe.score(X_test, target_train)))
 
 #model evaluation for monitoring
 #todo
